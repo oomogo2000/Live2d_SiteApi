@@ -1,0 +1,13 @@
+{
+	"mouseover": [{
+		"selector": "#live2d",
+		"text": ["hentai！", "Hentai！"]
+	}, {
+		"selector": "#waifu-tool .fa-comment",
+		"text": ["baka baka baka"]
+
+	}, {
+		"date": "12/20-12/31",
+		"text": "Baka<span>hihi</span>，hentai～"
+	}]
+}
