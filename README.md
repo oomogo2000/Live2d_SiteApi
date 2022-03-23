@@ -21,7 +21,7 @@ Font Awesome (v4 or v5) là cần thiết cho plugin này. lấy Font Awesome v4
 ```
 Nếu không, biểu tượng sẽ không hiển thị đúng.。（Nếu bạn đã tải bất kỳ phiên bản nào trong trang web Font Awesome，thì nó sẽ ko hoat động）
 
-## 使用 Usage
+## Usage
 
 Thêm dòng này `<head>` hoặc `<body>`，dòng này làm bạn có thể hiển thị hiệu ứng：
 ```xml
