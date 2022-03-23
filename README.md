@@ -1,170 +1,132 @@
-# Live2D Widget
+# Live2D Widget.
 
-![](https://forthebadge.com/images/badges/built-with-love.svg)
-![](https://forthebadge.com/images/badges/uses-html.svg)
-![](https://forthebadge.com/images/badges/made-with-javascript.svg)
-![](https://forthebadge.com/images/badges/contains-cat-gifs.svg)
-![](https://forthebadge.com/images/badges/powered-by-electricity.svg)
-![](https://forthebadge.com/images/badges/makes-people-smile.svg)
+! [] (https://forthebadge.com/images/badges/built-with-love.svg)
+! [] (https://forthebadge.com/images/badges/uses-html.svg)
+! [] (https://forthebadge.com/images/badges/made-with-javascript.svg)
+! [] (https://forthebadge.com/images/badges/contains-cat-gifs.svg)
+! [] (https://forthebadge.com/images/badges/powered-by-electricity.svg)
+! [] (https://forthebadge.com/images/badges/makes-people-smile.svg)
 
-## 特性 Feature
+## Tính năng
 
-在网页中添加 Live2D 看板娘。兼容 PJAX，支持无刷新加载。  
-Add Live2D widget to web page. Compatible with PJAX.
+Thêm một live2d vào trang web. Tương thích với PJAX, tải không hỗ trợ.
+Thêm tiện ích Live2D vào trang web. Tương thích với PJAX.
 
-**警告：本项目使用了大量 ES6 语法，不支持 IE 11 等老旧浏览器。**  
-**WARNING: This project does not support legacy browsers such as IE 11.**
+** CẢNH BÁO: Dự án này sử dụng một số lượng lớn cú pháp ES6, không hỗ trợ các trình duyệt cũ như IE 11. **
+** CẢNH BÁO: Dự án này không hỗ trợ các trình duyệt cũ như IE 11. **
 
-## 示例 Demo
+## 示例 demo.
 
-在[米米的博客](https://zhangshuqiao.org)的左下角可查看效果。（注：以下人物模型仅供展示之用，本仓库并不包含任何模型。）
+Hiệu ứng có thể được xem ở góc trên bên trái của [Blog Mi Mi] (https://zhangshuqiao.org). (Lưu ý: Mô hình ký tự sau đây chỉ dành cho hiển thị, kho này không chứa bất kỳ mô hình nào.)
 
-<img src="assets/screenshot-2.png" width="280"><img src="assets/screenshot-3.png" width="280"><img src="assets/screenshot-1.png" width="270">
+<IMG SRC = "Tài sản / Ảnh chụp màn hình-2.png" Chiều rộng = "280"> <IMG SRC = "Tài sản / Ảnh chụp màn hình-3.png" Chiều rộng = "280"> <IMG SRC = "Tài sản / Ảnh chụp màn hình-1.png Chiều rộng = "270">
 
-你也可以在允许的范围内进行二次开发，这里有一些示例
+Bạn cũng có thể thực hiện phát triển thứ cấp trong phạm vi cho phép, có một số ví dụ
 
-- [demo.html](https://mi.js.org/live2d-widget/demo/demo.html) ，展现基础效果
-- [login.html](https://mi.js.org/live2d-widget/demo/login.html) ，仿 NPM 的登陆界面
+- [demo.html] (https://mi.js.org/live2d-widget/demo/demo.html), hiển thị các hiệu ứng cơ bản
+- [login.html] (https://mi.js.org/live2d-widget/demo/login.html), Giao diện đăng nhập của NPM
 
-## 依赖 Dependencies
+## phụ thuộc
 
-本插件需要 Font Awesome (v4 或 v5) 图标支持，请确保相关样式表已在页面中加载。以 Font Awesome v4 为例，请在 `<head>` 中加入：  
-Font Awesome (v4 or v5) is required for this plugin. Take Font Awesome v4 as an example, please add the following in `<head>`:
-```xml
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-```
-否则图标将无法正常显示。（如果网页中已经加载了任何版本的 Font Awesome，就不要重复加载了）
+Plugin này yêu cầu hỗ trợ biểu tượng Font Awesome (V4 hoặc V5), đảm bảo bảng kiểu có liên quan được tải trong trang. Lấy phông chữ Awesome V4 làm ví dụ, vui lòng tham gia `<head>`:
+Phông chữ tuyệt vời (V4 hoặc V5) là bắt buộc đối với plugin này. Lấy phông chữ tuyệt vời v4 làm ví dụ, vui lòng thêm phần sau vào `<head>`:
+`` ``
+<link rel = "biểu định kiểu" href = "https://cdn.jsdelivr.net/npm/font-awgie/css/font-awger.min.css">>
+`` `.
+Nếu không, biểu tượng sẽ không hiển thị đúng. (Nếu bạn đã tải bất kỳ phiên bản nào của phông chữ tuyệt vời, đừng tải nó)
 
-## 使用 Usage
+## sử dụng sử dụng
 
-将这一行代码加入 `<head>` 或 `<body>`，即可展现出效果：
-```xml
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-```
-如果网站启用了 PJAX，由于看板娘不必每页刷新，因此要注意将相关脚本放到 PJAX 刷新区域之外。
+Thêm dòng mã này vào `<head>` hoặc `<body>` để hiển thị hiệu ứng:
+`` ``
+<script src = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@lates/autoload.js"> </ script>
+`` `.
+Nếu trang web được bật, vì bảng không phải làm mới mỗi trang, bạn nên chú ý để đặt tập lệnh có liên quan bên ngoài khu vực làm mới PJAX.
 
-换句话说，如果你是小白，或者只需要最基础的功能，就只用把这一行代码，连同前面加载 Font Awesome 的一行代码，一起放到 html 的 `<head>` 中即可。  
-对于用各种模版引擎（例如 Nunjucks，Jinja 或者 PHP）生成的页面，也要自行修改，方法类似，只是可能略为麻烦。以 [Hexo](https://hexo.io) 为例，需要在主题相关的 ejs 或 njk 模版中正确配置路径，才可以加载。
+Nói cách khác, nếu bạn có màu trắng nhỏ, hoặc chỉ có chức năng cơ bản nhất, chỉ cần sử dụng dòng mã này, cùng với phía trước phông chữ tuyệt vời, đặt nó vào `<head >``.
+Đối với các trang được tạo bằng các công cụ mẫu khác nhau (như Nunjucks, Jinja hoặc PHP), cũng có thể sửa đổi chính nó và phương thức này tương tự, nhưng nó có thể hơi rắc rối. Lấy [hexo] (https://hexo.io) làm ví dụ, bạn cần định cấu hình đúng đường dẫn trong mẫu EJ hoặc NJK liên quan đến chủ đề để tải.
 
-**但是！我们强烈推荐自己进行配置，否则很多功能是不完整的，并且可能产生问题！**  
-如果你有兴趣自己折腾的话，请看下面的详细说明。
+**Nhưng! Chúng tôi tự giới thiệu bản thân để cấu hình nó, nếu không nhiều tính năng không đầy đủ và có thể có vấn đề! **
+Nếu bạn quan tâm đến việc ném, xin vui lòng xem mô tả chi tiết dưới đây.
 
-### Using CDN
+### sử dụng CDN.
 
-要自定义有关内容，可以把这个仓库 Fork 一份，然后进行修改。这时，使用方法对应地变为
-```xml
-<script src="https://cdn.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js"></script>
-```
-将此处的 `username` 替换为你的 GitHub 用户名。为了使 CDN 的内容正常刷新，需要创建新的 git tag 并推送至 GitHub 仓库中，否则此处的 `@latest` 仍然指向更新前的文件。此外 CDN 本身存在缓存，因此改动可能需要一定的时间生效。相关文档：
-- [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
-- [Managing releases in a repository](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository)
+Để tùy chỉnh nội dung có liên quan, bạn có thể thực hiện fork kho này, sau đó sửa đổi nó. Tại thời điểm này, phương thức sử dụng thay đổi tương ứng với
+`` ``
+<script src = "https://cdn.jsdelivr.net/gh/username/live2d-widget@lates/autoload.js"> </ script>
+`` `.
+Thay thế tên `này. Thay thế nó bằng tên người dùng GitHub của bạn. Để thực hiện nội dung của CDN bình thường, bạn cần tạo một thẻ Git mới và đẩy đến kho GitHub, nếu không thì `@ mới nhất` vẫn là tệp trước khi cập nhật. Ngoài ra, bản thân CDN có bộ nhớ cache, vì vậy sự thay đổi có thể mất một thời gian nhất định để có hiệu lực. Tài liệu liên quan:
+- [Thông tin cơ bản Git - Tagning] (https://git-scm.com/book/en/v2/git-basics-tagging)
+- [Quản lý phát hành trong kho lưu trữ] (https://help.github.com/en/github/administering-rep repository/managing-release-in-a-repository)
 
-### Self-host
+### Tự chủ
 
-你也可以直接把这些文件放到服务器上，而不是通过 CDN 加载。
+Bạn cũng có thể đặt các tệp này trực tiếp trên máy chủ thay vì tải qua CDN.
 
-- 如果你能够通过 `ssh` 访问你的主机，请把整个仓库克隆到服务器上。执行：
-  ```bash
-  cd /path/to/your/webroot
-  # Clone this repository
-  git clone https://github.com/stevenjoezhang/live2d-widget.git
-  ```
-- 如果你的主机无法用 `ssh` 连接（例如一般的虚拟主机），请选择 `Download ZIP`，然后通过 `ftp` 等方式上传到主机上，再解压到网站的目录下。
-- 如果你是通过 Hexo 等工具部署的静态博客，请在博客源文件（即 `source`）目录下，执行前述的 `git clone` 命令。重新部署博客时，相关文件就会自动上传到对应的路径下。为了避免这些文件被 Hexo 插件错误地修改，可能需要设置 `skip_render`。
+- Nếu bạn có thể truy cập máy chủ của mình thông qua `ssh`, vui lòng câu lạc bộ toàn bộ kho đến máy chủ. thực hiện:
+  `` ``
+  CD / PATH / sang / của bạn / webroot
+  #Clone kho lưu trữ này
+  Git clone https://github.com/stevenjoezhang/live2d-widget.git.
+  `` `.
+- Nếu máy chủ của bạn không thể sử dụng kết nối `ssh` (ví dụ: máy chủ ảo chung), hãy chọn Tải xuống zip`, sau đó tải nó lên máy chủ thông qua` ftp`, v.v., sau đó trích xuất nó vào trang web.
+- Nếu bạn đang triển khai blog tĩnh từ các công cụ như Hexo, vui lòng thực hiện lệnh `gitclone` đã nói ở trên trong thư mục tệp nguồn blog (tức là` nguồn.). Khi triển khai lại blog, các tệp có liên quan sẽ tự động tải chúng lên đường dẫn tương ứng. Để tránh các tệp này được sửa đổi bởi plugin HEXO, bạn có thể cần đặt `skip_render`.
 
-这样，整个项目就可以通过你的服务器 IP 或者域名从公网访问了。不妨试试能否正常地通过浏览器打开 `autoload.js` 和 `live2d.min.js` 等文件，并确认这些文件的内容是完整和正确的。  
-一切正常的话，接下来修改一些配置就行了。（需要通过服务器上的文本编辑器修改；你也可以先在本地完成这一步骤，再上传到服务器上）  
-修改 `autoload.js` 中的常量 `live2d_path` 为 `live2d-widget` 这一目录的 URL。比如说，如果你能够通过
-```
-https://example.com/path/to/live2d-widget/live2d.min.js
-```
-访问到 `live2d.min.js`，那么就把 `live2d_path` 的值修改为
-```
+Theo cách này, toàn bộ dự án có thể truy cập từ mạng công cộng thông qua IP máy chủ hoặc tên miền của bạn. Cố gắng không mở `autoload.js` và` live2d.js`js., Xác nhận rằng nội dung của các tệp này hoàn tất và chính xác.
+Nếu mọi thứ là bình thường, sau đó bạn sẽ sửa đổi một số cấu hình. (Bạn cần sửa đổi trình soạn thảo văn bản trên máy chủ; bạn cũng có thể hoàn thành bước này theo cách này, tải nó lên máy chủ)
+Sửa đổi `autoload.js` lear2d_path` là URL của `live2d-widget` thư mục này. Ví dụ, nếu bạn có thể vượt qua
+`` `.
+https://example.com/path/to/live2d-widget/live2d.min.js.
+`` `.
+Truy cập vào `live2d.min.js`, sau đó sửa đổi giá trị của` live2d_path`
+`` `.
 https://example.com/path/to/live2d-widget/
-```
-路径末尾的 `/` 一定要加上。具体可以参考 `autoload.js` 内的注释。  
-完成后，在你要添加看板娘的界面加入
-```xml
-<script src="https://example.com/path/to/live2d-widget/autoload.js"></script>
-```
-就可以加载了。
+`` `.
+Đầu cuối của đường dẫn là thích hợp để thêm. Cụ thể, vui lòng tham khảo chú thích `autoload.js`
+Sau khi hoàn thành, thêm giao diện cô dâu của bạn
+`` ``
+<script src = "https://example.com/path/tob/live2d-widget/autoload.js"> </ script>
+`` `.
+Bạn có thể tải nó.
 
-## 后端 API
+## api cuối
 
-`initWidget` 方法接受名为 `apiPath` 和 `cdnPath` 的参数，两者设置其中一项即可。其中 `apiPath` 为后端 API 的 URL，可以自行搭建，并增加模型（需要修改的内容比较多，此处不再赘述）。而 `cdnPath` 则是通过 jsDelivr 这样的 CDN 服务加载资源，更加稳定。
+Phương thức `initwidget` được chấp nhận các tham số có tên` apipath` và` cdnpath`, hai đặt một trong số chúng. Trong đó `apipath` là URL của API phụ trợ, bạn có thể tự xây dựng nó và tăng mô hình (nhiều nội dung cần phải được sửa đổi và chi tiết sẽ không được mô tả sau). Và `CDNPath đã tải tài nguyên thông qua dịch vụ CDN như JSDELIVR, ổn định hơn.
 
-## 目录结构 Files
+## Tệp cấu trúc thư mục
 
-- `waifu-tips.js` 包含了按钮和对话框的逻辑；
-- `waifu-tips.json` 中定义了触发条件（`selector`，CSS 选择器）和触发时显示的文字（`text`）；
-- `waifu.css` 是看板娘的样式表。
+- `waifu-tips.js` hơn nữa của nút và hộp thoại;
+- `waifu-tips.json` Xác định điều kiện kích hoạt (` selector`, bộ chọn css) và văn bản được hiển thị khi kích hoạt (` text`);
+- `waifu.css` là một kiểu kiểu cho một dây buộc.
 
-源文件是对 Hexo 的 [NexT 主题](http://github.com/next-theme/hexo-theme-next)有效的，为了适用于你自己的网页，可能需要自行修改，或增加新内容。  
-**警告：作者不对包括但不限于 `waifu-tips.js` 和 `waifu-tips.json` 文件中的内容负责，请自行确保它们是合适的。**
+Tệp nguồn hợp lệ cho [chủ đề tiếp theo của Hexo] (http://github.com/next-theme/hexo-theme-next), để áp dụng trang web của riêng bạn, bạn có thể cần sửa đổi hoặc thêm Nội dung mới.
+** CẢNH BÁO: Tác giả không chịu trách nhiệm về bao gồm nhưng không giới hạn ở `waifu-tips.js` và` waifu-tips.json. Vui lòng đảm bảo rằng chúng phù hợp. **
 
-如果有任何疑问，欢迎提 Issue。如果有任何修改建议，欢迎提 Pull Request。
+Nếu bạn có bất kỳ câu hỏi, xin vui lòng chào đón vấn đề của bạn. Nếu có bất kỳ gợi ý sửa đổi nào, xin vui lòng chào đón yêu cầu kéo.
 
-## 鸣谢 Thanks
+## Cảm ơn
 
-<a href="https://www.browserstack.com/"><img height="80" src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo"></a>
+<a href="https://www.browserstack.com/"> <img ight = "80" src = "https://live.browserstack.com/images/opensource/BrowsStack-logo.svg" alt = " Logo DuyerStack> </a>
 
-> 感谢 BrowserStack 容许我们在真实的浏览器中测试此项目。  
-> Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
+> Cảm ơn DuyerStacks cho phép chúng tôi kiểm tra dự án này trong trình duyệt thực sự.
+> Cảm ơn [https://www.browserstack.com/) để cung cấp cơ sở hạ tầng cho phép chúng tôi kiểm tra trong các trình duyệt thực sự!
 
-<a href="https://www.jsdelivr.com"><img height="80" src="https://raw.githubusercontent.com/jsdelivr/jsdelivr-media/master/default/svg/jsdelivr-logo-horizontal.svg"></a>
+<a href="htts://www.jsdelivr.com"> <img ight = "80" src = "https://raw.githubusercontent.com/jsdelivr-media/master/default/svg/jsdelivr- Logo-horizontal.svg> </a>
 
-> 感谢 jsDelivr 提供的 CDN 服务。  
-> Thanks jsDelivr for providing public CDN service.
+> Nhờ dịch vụ CDN do JSDELIVR cung cấp.
+> Cảm ơn jsdelivr để cung cấp dịch vụ CDN công cộng.
 
-代码自这篇博文魔改而来：  
-https://www.fghrsh.net/post/123.html
+Mã từ bài đăng trên blog này:
+https://www.fghrsh.net/post/123.html.
 
-点击看板娘的纸飞机按钮时，会出现一个彩蛋，这来自于 [WebsiteAsteroids](http://www.websiteasteroids.com)。
+Khi bạn nhấp vào nút Máy bay giấy của dây buộc, sẽ có một quả trứng, đến từ [WebSiteasteroids] (http://www.websiteasteroids.com).
 
-## 更多 More
+## Hơn nữa
 
-更多内容可以参考：  
-https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02  
-https://github.com/xiazeyu/live2d-widget.js  
-https://github.com/summerscar/live2dDemo
+Thêm chi tiết có thể được tham chiếu:
+https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02.
+https://github.com/xiazeyu/live2d-widget.js.
+Https://github.com/summerscar/live2ddemo.
 
-关于后端 API 模型：  
-https://github.com/fghrsh/live2d_api  
-https://github.com/xiazeyu/live2d-widget-models  
-https://github.com/xiaoski/live2d_models_collection
-
-除此之外，还有桌面版本：  
-https://github.com/amorist/platelet  
-https://github.com/akiroz/Live2D-Widget  
-https://github.com/zenghongtu/PPet  
-https://github.com/LikeNeko/L2dPetForMac
-
-以及 Wallpaper Engine：  
-https://github.com/guansss/nep-live2d
-
-## 许可证 License
-
-Released under the GNU General Public License v3  
-http://www.gnu.org/licenses/gpl-3.0.html
-
-本仓库并不包含任何模型，用作展示的所有 Live2D 模型、图片、动作数据等版权均属于其原作者，仅供研究学习，不得用于商业用途。
-
-Live2D 官方网站：  
-https://www.live2d.com/en/  
-https://live2d.github.io
-
-Live2D Cubism Core は Live2D Proprietary Software License で提供しています。  
-https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html  
-Live2D Cubism Components は Live2D Open Software License で提供しています。  
-http://www.live2d.com/eula/live2d-open-software-license-agreement_en.html
-
-> The terms and conditions do prohibit modification, but obfuscating in `live2d.min.js` would not be considered illegal modification.
-
-https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascript-question
-
-## 更新 Update
-
-2018年10月31日，由 fghrsh 提供的原 API 停用，请更新至新地址。参考文章：  
-https://www.fghrsh.net/post/170.html
-
-2020年1月1日起，本项目不再依赖于 jQuery。
+Về mô hình API phụ trợ:
+Https://github.com/fghrsh/live2d_api.
