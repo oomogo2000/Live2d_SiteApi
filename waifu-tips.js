@@ -118,7 +118,7 @@ function loadWidget(config) {
 			else if (domain === "google") text = `Hello！<span>「${document.title.split(" - ")[0]}」</span>`;
 			else text = `Hello！ <span>${referrer.hostname}</span> Bạn`;
 		} else {
-			text = `欢迎阅读<span>「${document.title.split(" - ")[0]}」</span>`;
+			text = `Địt mẹ mày<span>「${document.title.split(" - ")[0]}」</span>`;
 		}
 		showMessage(text, 7000, 8);
 	})();
